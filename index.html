@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akhil | Computer Science Engineering Student</title>
+  <meta name="description" content="Portfolio of Akhil, a Computer Science Engineering student at Atria Institute of Technology skilled in Blockchain, Python and Java." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="logo">Akhil<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="btn btn-small" data-open-contact>Contact Me</button>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Akhil</h1>
+        <h2 id="typed" aria-live="polite">Computer Science Engineering Student</h2>
+        <p class="lead">I build things with code, from blockchain ideas to Python and Java projects, and I'm always learning something new.</p>
+        <div class="hero-actions">
+          <button class="btn" data-open-contact>Get in touch</button>
+          <a class="btn btn-outline" href="#projects">View projects</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="avatar">A</div>
+        <ul class="facts">
+          <li><b>Name</b> Akhil</li>
+          <li><b>College</b> Atria Institute of Technology</li>
+          <li><b>Branch</b> Computer Science Engineering</li>
+          <li><b>University</b> VTU (Visvesvaraya Technological University)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h3 class="section-title">About Me</h3>
+      <div class="about-grid">
+        <p>
+          I'm Akhil, a Computer Science Engineering student at
+          <strong>Atria Institute of Technology</strong>, studying under the
+          <strong>VTU</strong> curriculum. I enjoy turning ideas into working software and
+          I'm especially curious about blockchain technology and how it can solve real problems.
+        </p>
+        <p>
+          Outside the classroom you'll find me playing cricket, singing, or watching movies.
+          I like working in teams, and I've collaborated on a societal-impact project where we designed
+          a product from PRD to prototype.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <h3 class="section-title">Education</h3>
+      <div class="timeline">
+        <div class="t-item">
+          <span class="dot"></span>
+          <h4>B.E. in Computer Science Engineering</h4>
+          <p>Atria Institute of Technology, Bengaluru</p>
+          <p class="muted">Affiliated to Visvesvaraya Technological University (VTU)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h3 class="section-title">Skills</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">⛓️</div>
+          <h4>Blockchain Development</h4>
+          <p>Smart contracts, decentralized applications and the fundamentals of distributed ledgers.</p>
+          <div class="bar"><i style="--w:75%"></i></div>
+        </article>
+        <article class="card">
+          <div class="icon">🐍</div>
+          <h4>Python</h4>
+          <p>Scripting, automation, data handling and problem solving.</p>
+          <div class="bar"><i style="--w:85%"></i></div>
+        </article>
+        <article class="card">
+          <div class="icon">☕</div>
+          <h4>Java</h4>
+          <p>Object-oriented programming, data structures and application development.</p>
+          <div class="bar"><i style="--w:80%"></i></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <h3 class="section-title">Projects</h3>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🚗</div>
+          <h4>Co.Move</h4>
+          <p>An AI-powered corporate carpooling platform built as a team Societal Impact Project. Includes a full PRD, an interactive prototype and a layered tech-stack architecture.</p>
+          <div class="tags"><span>Team project</span><span>AI</span><span>Prototype</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="section">
+      <h3 class="section-title">Hobbies</h3>
+      <div class="cards">
+        <article class="card center">
+          <div class="icon big">🏏</div>
+          <h4>Cricket</h4>
+          <p>Nothing beats a game on the field with friends.</p>
+        </article>
+        <article class="card center">
+          <div class="icon big">🎤</div>
+          <h4>Singing</h4>
+          <p>Music is how I relax and express myself.</p>
+        </article>
+        <article class="card center">
+          <div class="icon big">🎬</div>
+          <h4>Movies</h4>
+          <p>Always up for a good story on the big screen.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h3 class="section-title">Let's Connect</h3>
+      <p class="lead center-text">Have a question, an opportunity or just want to say hi? Send me a message.</p>
+      <button class="btn big-btn" data-open-contact>💬 Message Me</button>
+      <div class="socials">
+        <a id="link-email" href="#" target="_blank" rel="noopener">Email</a>
+        <a id="link-github" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a id="link-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Akhil. All rights reserved.</p>
+  </footer>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal" id="contactModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-box">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <h3 id="modalTitle">Message Akhil</h3>
+      <form id="contactForm">
+        <label>Your name
+          <input type="text" id="cName" required placeholder="Your name" />
+        </label>
+        <label>Your email
+          <input type="email" id="cEmail" required placeholder="you@example.com" />
+        </label>
+        <label>Message
+          <textarea id="cMsg" rows="4" required placeholder="Write your message..."></textarea>
+        </label>
+        <button type="submit" class="btn">Send message</button>
+        <button type="button" class="btn btn-outline" id="waBtn">Chat on WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
